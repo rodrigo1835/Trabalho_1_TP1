@@ -9,29 +9,17 @@ using namespace std;
 int main()
 {
     Nome nome;
-
     Senha senha,senha2;
-
     Estado estado;
-
     Percentual percentual;
-
     CodigoDePagamento codigoPagamento;
-
     Dinheiro dinheiro;
-    
     Cpf cpf;
-
     Setor setor;
-
     Data data;
-
     CodigoDeTitulo titulo;
-
     Conta conta;
-
     Titulo Contatitulo;
-
     Pagamento pagamento;
 
     nome.setNome("Rodrigo Reis");
@@ -60,7 +48,7 @@ int main()
     pagamento.setData(data);
     pagamento.setPercentual(percentual);
     pagamento.setEstado(estado);
-    
+
     cout << endl;
     cout << "Conta:" << endl;
     cout << "Nome: " << conta.getNome().getNome() << endl;
@@ -179,6 +167,6 @@ int main()
         case TUPagamento::FALHA : cout << "FALHA : PAGAMENTO" << endl;
             break;
     }
-       
+
     return 0;
 }
